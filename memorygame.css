@@ -153,7 +153,7 @@ div.Bessie_Coleman {
 }
 
 div.hidden {
-  background: rgb(146, 98, 146);
+  background: rgb(197, 164, 197);
   animation-name: colorFluctuations;
   animation-duration: 8s;
   animation-iteration-count: infinite;
@@ -237,6 +237,7 @@ div.hidden:hover {
 
 #startModal {
   display: block;
+  background-color: rgba(65, 3, 122, 0.904);
 }
 
 #winButton {
@@ -308,15 +309,23 @@ div.hidden:hover {
 }
 
 @keyframes colorFluctuations {
-  0%   {background-color:rgb(146, 98, 146);}
+  0%   {background-color:rgb(197, 164, 197);}
   10%  {background-color:rgb(241, 139, 196);}
-  200%  {background-color:rgb(235, 174, 124);}
-  30%  {background-color:rgb(159, 223, 157);}
-  40%  {background-color:rgb(146, 98, 146);}
-  50%  {background-color:rgb(96, 127, 173);}
-  60%  {background-color:rgb(113, 175, 165);}
+  200%  {background-color:rgb(236, 200, 171);}
+  30%  {background-color:rgb(196, 230, 195);}
+  40%  {background-color:rgb(216, 184, 216);}
+  50%  {background-color:rgb(151, 173, 206);}
+  60%  {background-color:rgb(139, 179, 172);}
   70%  {background-color:rgb(205, 228, 175);}
   80%  {background-color:rgb(204, 172, 172);}
   90%  {background-color:rgb(207, 155, 228);}
-  100%  {background-color:rgb(146, 98, 146);}
+  100%  {background-color:rgb(197, 164, 197);}
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);left:0px;}
+  25% {transform: rotate(20deg);left:0px;}
+  50%  {transform: rotate(0deg);left:500px;}
+  55%  {transform: rotate(0deg);left:500px;}
+  70%  {transform: rotate(0deg);left:500px;}
+  100% {transform: rotate(-360deg);left:0px;}
 }
