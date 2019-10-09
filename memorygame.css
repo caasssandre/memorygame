@@ -47,79 +47,116 @@ button {
 }
 
 div.Margo {
-  background: no-repeat center/110% url("images/margo-hayes.jpg") grey;
+  background: no-repeat center/110% url("images/margo-hayes.jpg") rgb(146, 98, 146);
 }
 
 div.Marie_Curie {
-  background: no-repeat center/110% url("images/Marie_Currie.jpg") grey;
+  background: no-repeat center/110% url("images/Marie_Currie.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 444ms;
 }
 
 div.Jacinda {
-  background: no-repeat center/110% url("images/Jacinda.jpg") grey;
+  background: no-repeat center/110% url("images/Jacinda.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 888ms;
 }
 
 div.Rosa_Parks {
-  background: no-repeat center/110% url("images/Rosa_Parks.jpg") grey;
+  background: no-repeat center/110% url("images/Rosa_Parks.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 1332ms;
 }
 
 div.Greta_Thunberg {
-  background: no-repeat center/110% url("images/Greta_Thunberg.jpg") grey;
+  background: no-repeat center/110% url("images/Greta_Thunberg.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 1776ms;
 }
 
 div.Ada_Lovelace {
-  background: no-repeat center/110% url("images/Ada_Lovelace.jpg") grey;
+  background: no-repeat center/110% url("images/Ada_Lovelace.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 2220ms;
 }
 
 div.Rosalind_Franklin {
-  background: no-repeat center/110% url("images/Rosalind_Franklin.jpg") grey;
+  background: no-repeat center/110% url("images/Rosalind_Franklin.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 2664ms;
 }
 
 div.Angela_Burdett_Coutts {
-  background: no-repeat center/110% url("images/Angela_Burdett_Coutts.jpg") grey;
+  background: no-repeat center/110% url("images/Angela_Burdett_Coutts.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 3108ms;
 }
 
 div.Mary_Wollstonecraft {
-  background: no-repeat center/110% url("images/Mary_Wollstonecraft.jpg") grey;
+  background: no-repeat center/110% url("images/Mary_Wollstonecraft.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 3552ms;
 }
 
 div.Jane_Austen {
-  background: no-repeat center/110% url("images/Jane_Autsen.jpg") grey;
+  background: no-repeat center/110% url("images/Jane_Autsen.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 3996ms;
 }
 
 div.Wangari_Maathai {
-  background: no-repeat center/110% url("images/Wangari_Maathai.jpg") grey;
+  background: no-repeat center/110% url("images/Wangari_Maathai.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 4440ms;
 }
 
 div.Simone_de_Beauvoir {
-  background: no-repeat center/110% url("images/Simone_de_Beauvoir.jpg") grey;
+  background: no-repeat center/110% url("images/Simone_de_Beauvoir.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 4884ms;
 }
 
 div.Grace_Hopper {
-  background: no-repeat center/115% url("images/Grace_Hopper.jpg") grey;
+  background: no-repeat center/115% url("images/Grace_Hopper.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 5328ms;
 }
 
 div.Frida_Kahlo {
-  background: no-repeat center/110% url("images/Frida_Kahlo.jpg") grey;
+  background: no-repeat center/110% url("images/Frida_Kahlo.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 5872ms;
 }
 
 div.Hypatia {
-  background: no-repeat center/110% url("images/Hypatia.jpg") grey;
+  background: no-repeat center/110% url("images/Hypatia.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 6316ms;
 }
 
 div.Sacagawea {
-  background: no-repeat center/110% url("images/Sacagawea.jpg") grey;
+  background: no-repeat center/110% url("images/Sacagawea.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 6760ms;
 }
 
 div.Lise_Meitner {
-  background: no-repeat center/110% url("images/Lise_Meitner.jpg") grey;
+  background: no-repeat center/110% url("images/Lise_Meitner.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 7204ms;
 }
 
 div.Bessie_Coleman {
-  background: no-repeat center/110% url("images/Bessie_Coleman.jpg") grey;
+  background: no-repeat center/110% url("images/Bessie_Coleman.jpg") rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-delay: 7648ms;
 }
 
 div.hidden {
-  background:#eee;
+  background: rgb(146, 98, 146);
+  animation-name: colorFluctuations;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 div.hidden:hover {
@@ -268,4 +305,18 @@ div.hidden:hover {
   to {
     opacity: 1;
   }
+}
+
+@keyframes colorFluctuations {
+  0%   {background-color:rgb(146, 98, 146);}
+  10%  {background-color:rgb(241, 139, 196);}
+  200%  {background-color:rgb(235, 174, 124);}
+  30%  {background-color:rgb(159, 223, 157);}
+  40%  {background-color:rgb(146, 98, 146);}
+  50%  {background-color:rgb(96, 127, 173);}
+  60%  {background-color:rgb(113, 175, 165);}
+  70%  {background-color:rgb(205, 228, 175);}
+  80%  {background-color:rgb(204, 172, 172);}
+  90%  {background-color:rgb(207, 155, 228);}
+  100%  {background-color:rgb(146, 98, 146);}
 }
