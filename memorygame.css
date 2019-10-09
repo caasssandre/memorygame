@@ -10,12 +10,6 @@ body {
   flex-direction: column;
 }
 
-#message, #notes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #message {
   font-size: 1.5rem;
 }
@@ -27,9 +21,6 @@ button {
   color: rgb(226, 142, 233);
   font-size: 20px;
   padding: 10px;
-}
-button:hover {
-  transform: scale(1.2);
 }
 
 .board {
@@ -59,7 +50,7 @@ div.Margo {
   background: no-repeat center/110% url("images/margo-hayes.jpg") grey;
 }
 
-div.Marie_Currie {
+div.Marie_Curie {
   background: no-repeat center/110% url("images/Marie_Currie.jpg") grey;
 }
 
@@ -91,7 +82,7 @@ div.Mary_Wollstonecraft {
   background: no-repeat center/110% url("images/Mary_Wollstonecraft.jpg") grey;
 }
 
-div.Jane_Autsen {
+div.Jane_Austen {
   background: no-repeat center/110% url("images/Jane_Autsen.jpg") grey;
 }
 
@@ -128,10 +119,153 @@ div.Bessie_Coleman {
 }
 
 div.hidden {
-  background: #eee;
+  background:#eee;
 }
 
 div.hidden:hover {
   background: #ccc;
 }
 
+#margoModal {
+  display: none;
+}
+
+#marieCurieModal {
+  display: none;
+}
+
+#jacindaModal {
+  display: none;
+}
+
+#rosaParksModal {
+  display: none;
+}
+
+#gretaThunbergModal {
+  display: none;
+}
+
+#adaLovelaceModal {
+  display: none;
+}
+
+#rosalindFranklinModal {
+  display: none;
+}
+
+#angelaBurdettCouttsModal {
+  display: none;
+}
+
+#janeAustenModal {
+  display: none;
+}
+
+#wangariMaathaiModal {
+  display: none;
+}
+
+#simonedeBeauvoirModal {
+  display: none;
+}
+
+#graceHopperModal {
+  display: none;
+}
+
+#fridaKahloModal {
+  display: none;
+}
+
+#maryWollstonecraftModal {
+  display: none;
+}
+
+#hypatiaModal {
+  display: none;
+}
+
+#sacagaweaModal {
+  display: none;
+}
+
+#bessieColemanModal {
+  display: none;
+}
+
+#liseMeitnerModal {
+  display: none;
+}
+
+#startModal {
+  display: block;
+}
+
+#winButton {
+  position: fixed;
+  bottom: 10%;
+  background-color: rgb(68, 14, 138);
+  color: rgba(255, 255, 255, 0.705);
+  display: none;
+  z-index: 2;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 2s;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.modal-header {
+  background:  rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

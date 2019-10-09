@@ -1,15 +1,13 @@
 var lib = {
   initBoard: initBoard,
-  displayMessage: displayMessage
 }
 
 function initBoard () {
-  displayMessage("Let\'s play! Find the pairs to win")
   board.cells.sort(cellCompare)
   var boardNode = document.getElementsByClassName('board')[0]
-  while (boardNode.firstChild) {
-    boardNode.removeChild(boardNode.firstChild);
-}
+ // while (boardNode.firstChild) {
+  //  boardNode.removeChild(boardNode.firstChild);
+//}
   drawBoard(boardNode)
   addListeners(boardNode)
   return true
@@ -46,9 +44,6 @@ function cellsToNodes (boardNode, cell) {
   if (cell.hidden) {
     node.classList.add('hidden')
   } else {
-    if (cell.surroundingMines && !cell.isMine) {
-      node.innerHTML = cell.surroundingMines
-    }
   }
   boardNode.appendChild(node)
   return boardNode
@@ -61,19 +56,14 @@ function addListeners (boardNode) {
 }
 
 function showCell (evt) {
+  if(timeOut != 0){
+    return
+  }
   var idx = getCellIndex(getRow(evt.target), getCol(evt.target))
   var cell = board.cells[idx]
-  cell.hidden = false
   cell.isMarked = false
   evt.target.classList.remove('hidden')
   evt.target.classList.remove('marked')
-  if (evt.target.classList.contains('mine')) {
-    displayMessage('BOOM!')
-    revealMines()
-    removeListeners()
-    showButton('myButton')
-    return
-  }
 }
 
 // Array.includes polyfill
@@ -139,10 +129,6 @@ function getLowerBound (n) {
 function getUpperBound (n) {
   var limit = Math.sqrt(board.cells.length)
   return n + 1 > limit ? limit : n + 1
-}
-
-function displayMessage (msg, id) {
-  document.getElementById(id || 'message').innerHTML = '<p>' + msg + '</p>'
 }
 
 function getRow (element) {

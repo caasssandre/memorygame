@@ -1,17 +1,223 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Memorygame</title>
+    <title>memorygame</title>
     <link rel="stylesheet" href="memorygame.css">
-    <script src="lib/tests.js"></script>
     <script src="lib/lib.js"></script>
     <script src="memorygame.js"></script>
   </head>
   <body>
-    <div id="memorygame"></div>
-    <button id="myButton">MAKE A NEW BOARD</button>
-    <button id="newButton">PLAY AGAIN?</button>
-    <div id="notes"></div>
+      <div id="startModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Memory game</h2>
+            </div>
+            <div class="modal-body">
+              <p>Click on the cards to reveal who is hiding underneath and try to find the matching pairs. Each time you find a pair you will be rewarded with some valuable knowledge about an important woman in history. Have fun!
+              </p>
+            </div>
+          </div>
+        </div>
+    <div id="margoModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Margo Hayes (1998)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Margo Hayes is an American professional rock climber from Boulder, Colorado. She is known for being the first woman to climb a route graded 9a+ (5.15a) (La Rambla, in Siurana, Spain). In 2016, she won both the Bouldering and Lead Climbing events at the World Youth Championships in Guangzhou (China).</p>
+        </div>
+      </div>
+    </div>
+    <div id="marieCurieModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Marrie Curie (1867-1934)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Marie Skłodowska Curie was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. She was the first woman to win a Nobel Prize, is the only woman to have won the Nobel prize twice, and is the only person to have won the Nobel Prize in two different scientific fields. She was also the first woman to become a professor at the University of Paris, and in 1995 became the first woman to be entombed on her own merits in the Panthéon in Paris.</p>
+        </div>
+      </div>
+    </div>
+    <div id="jacindaModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Jacinda Ardern (1980)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Jacinda Kate Laurell Ardern is a New Zealand politician serving since 26 October 2017 as the 40th Prime Minister of New Zealand. She is the world's youngest female head of government, having taken office at age 37. Ardern became the world's second elected head of government to give birth while in office when her daughter was born on 21 June 2018. For her global outreach, leadership skills, and the fact that New Zealand's global ratings of approval and importance are significantly improving under her premiership, Ardern has been widely described the most powerful woman in the Southern Hemisphere and one of the most powerful women in the world.</p>
+        </div>
+      </div>
+    </div>
+    <div id="rosaParksModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Rosa Parks (1913-2005)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Rosa Parks was an American activist in the civil rights movement best known for her pivotal role in the Montgomery bus boycott. The United States Congress has called her "the first lady of civil rights" and "the mother of the freedom movement". On December 1, 1955, in Montgomery, Alabama, Parks rejected bus driver James F. Blake's order to relinquish her seat in the "colored section" to a white passenger, after the whites-only section was filled. She became an international icon of resistance to racial segregation.</p>
+        </div>
+      </div>
+    </div>
+    <div id="gretaThunbergModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Greta Thunberg (2003)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Greta Thunberg is a Swedish teenage environmental activist on climate change whose campaigning has gained international recognition. Thunberg first became known for her activism in August 2018 when, at age 15, she began spending her school days outside the Swedish parliament to call for stronger action on global warming by holding up a sign saying (in Swedish) "School strike for climate". Soon, other students engaged in similar protests in their own communities. Together they organised a school climate strike movement under the name Fridays for Future. After Thunberg addressed the 2018 United Nations Climate Change Conference, student strikes took place every week somewhere in the world. In 2019, there were at least two coordinated multi-city protests involving over one million students each.</p>
+        </div>
+      </div>
+    </div>
+    <div id="adaLovelaceModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Ada Lovelace (1815-1852)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Augusta Ada King, Countess of Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and published the first algorithm intended to be carried out by such a machine. As a result, she is sometimes regarded as the first to recognise the full potential of a "computing machine" and one of the first computer programmers.</p>
+        </div>
+      </div>
+    </div>
+    <div id="rosalindFranklinModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Rosalind Franklin (1920-1958)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Rosalind Franklin was an English chemist and X-ray crystallographer whose work was central to the understanding of the molecular structures of DNA (deoxyribonucleic acid), RNA (ribonucleic acid), viruses, coal, and graphite. Although her works on coal and viruses were appreciated in her lifetime, her contributions to the discovery of the structure of DNA were largely recognised posthumously. Franklin is best known for her work on the X-ray diffraction images of DNA, which led to the discovery of the DNA double helix for which James Watson, Francis Crick and Maurice Wilkins shared the Nobel Prize in Physiology or Medicine in 1962</p>
+        </div>
+      </div>
+    </div>
+    <div id="angelaBurdettCouttsModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Angela Burdett Coutts (1814-1906)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Angela Georgina Burdett-Coutts, was a nineteenth-century philanthropist. In 1837 she became one of the wealthiest women in England when she inherited her grandfather's fortune of around £1.8 million (equivalent to £160,000,000 in 2018). Edward VII is reported to have described her as, "after my mother, the most remarkable woman in the kingdom". Burdett-Coutts spent the majority of her wealth on scholarships, endowments, and a wide range of philanthropic causes. One of her earliest philanthropic acts was to co-found (with Charles Dickens) a home for young women who had "turned to a life of immorality", including theft and prostitution. The home was known as Urania Cottage.</p>
+        </div>
+      </div>
+    </div>
+    <div id="janeAustenModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Jane Austen (1775-1817)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Jane Austen was an English novelist known primarily for her six major novels, which interpret, critique and comment upon the British landed gentry at the end of the 18th century. Austen's plots often explore the dependence of women on marriage in the pursuit of favourable social standing and economic security. Her works critique the novels of sensibility of the second half of the 18th century and are part of the transition to 19th-century literary realism. Her use of biting irony, along with her realism, humour, and social commentary, have long earned her acclaim among critics, scholars, and popular audiences alike.</p>
+        </div>
+      </div>
+    </div>
+    <div id="wangariMaathaiModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Wangari Maathai (1940-2011)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Wangarĩ Muta Maathai was a renowned Kenyan social, environmental and political activist and the first African woman to win the Nobel Prize. She was educated in the United States at Mount St. Scholastica (Benedictine College) and the University of Pittsburgh, as well as the University of Nairobi in Kenya. In 1977, Maathai founded the Green Belt Movement, an environmental non-governmental organization focused on the planting of trees, environmental conservation, and women's rights. In 1984, she was awarded the Right Livelihood Award. Maathai was an elected member of Parliament and served as assistant minister for Environment and Natural resources in the government of President Mwai Kibaki.</p>
+        </div>
+      </div>
+    </div>
+    <div id="simonedeBeauvoirModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Simone de Beauvoir (1908-1986)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Simone de Beauvoir was a French writer, intellectual, existentialist philosopher, political activist, feminist and social theorist. Though she did not consider herself a philosopher, she had a significant influence on both feminist existentialism and feminist theory. De Beauvoir wrote novels, essays, biographies, autobiography and monographs on philosophy, politics, and social issues. She was known for her 1949 treatise The Second Sex, a detailed analysis of women's oppression and a foundational tract of contemporary feminism; and for her novels, including She Came to Stay and The Mandarins.</p>
+        </div>
+      </div>
+    </div>
+    <div id="graceHopperModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Grace Hopper (1906-1992)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Grace Brewster Murray Hopper was an American computer scientist and United States Navy rear admiral. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first linkers. She popularized the idea of machine-independent programming languages, which led to the development of COBOL, an early high-level programming language still in use today.</p>
+        </div>
+      </div>
+    </div>
+    <div id="fridaKahloModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Frida Kahlo (1907-1954)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Frida Kahlo was a Mexican painter known for her many portraits, self-portraits, and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class, and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist.</p>
+        </div>
+      </div>
+    </div>
+    <div id="maryWollstonecraftModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Mary Wollstonecraft (1759-1797)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Mary Wollstonecraft was an English writer, philosopher, and advocate of women's rights. Until the late 20th century, Wollstonecraft's life, which encompassed several unconventional personal relationships, received more attention than her writing. Today, Wollstonecraft is regarded as one of the founding feminist philosophers, and feminists often cite both her life and work as important influences. Wollstonecraft is best known for 'A Vindication of the Rights of Woman' (1792), in which she argues that women are not naturally inferior to men, but appear so only because they lack education. She suggests that both men and women should be treated as rational beings and imagines a social order founded on reason.</p>
+        </div>
+      </div>
+    </div>
+    <div id="hypatiaModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Hypatia (c.350-370 - 415)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Hypatia was a Hellenistic Neoplatonist philosopher, astronomer, and mathematician, who lived in Alexandria, Egypt. She was a prominent thinker of the Neoplatonic school in Alexandria where she taught philosophy and astronomy. She is the first female mathematician whose life is reasonably well recorded. Hypatia was renowned in her own lifetime as a great teacher and a wise counselor. She is known to have written a commentary on Diophantus's thirteen-volume Arithmetica, which may survive in part, having been interpolated into Diophantus's original text. Many modern scholars also believe that Hypatia may have edited the surviving text of Ptolemy's Almagest.</p>
+        </div>
+      </div>
+    </div>
+    <div id="sacagaweaModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Sacagawea (1788-1812)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Sacagawea was a Lemhi Shoshone woman who helped the Lewis and Clark Expedition in achieving their chartered mission objectives by exploring the Louisiana Territory. Sacagawea traveled with the expedition thousands of miles from North Dakota to the Pacific Ocean. She helped establish cultural contacts with Native American populations in addition to her contributions to natural history.</p>
+        </div>
+      </div>
+    </div>
+    <div id="bessieColemanModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Bessie Coleman (1892- 1926)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Bessie Coleman was an early American civil aviator. She was the first woman of African-American descent, and the first of Native-American descent, to hold a pilot license. She earned her pilot license from the Fédération Aéronautique Internationale on June 15, 1921, and was the first black person to earn an international pilot's license. Coleman developed an early interest in flying, but African Americans, Native Americans, and women had no flight training opportunities in the United States, so she saved up money and obtained sponsorships to go to France for flight school. She had hoped to start a school for African-American fliers but died in a plane crash in 1926 while testing a new aircraft.</p>
+        </div>
+      </div>
+    </div>
+    <div id="liseMeitnerModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Lise Meitner (1878-1968)</h2>
+        </div>
+        <div class="modal-body">
+          <p>Lise Meitner was an Austrian-Swedish physicist who worked on radioactivity and nuclear physics. Meitner, Otto Hahn and Otto Robert Frisch led the small group of scientists who first discovered nuclear fission of uranium when it absorbed an extra neutron; the results were published in early 1939. Meitner, Hahn and Frisch understood that the fission process, which splits the atomic nucleus of uranium into two smaller nuclei, must be accompanied by an enormous release of energy. Their research into nuclear fission helped to pioneer nuclear reactors to generate electricity as well as the development of nuclear weapons during World War II.</p>
+        </div>
+      </div>
+    </div>
+    <button id="winButton">PLAY AGAIN</button>
     <div class="board"></div>
   </body>
 </html>
