@@ -46,6 +46,10 @@ button {
   background-color: white;
 }
 
+#preloaded-images {
+  display: none;
+}
+
 div.Margo {
   background: no-repeat center/110% url("images/margo-hayes.jpg") rgb(146, 98, 146);
 }
